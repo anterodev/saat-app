@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { AttendancePage } from '../attendance/attendance';
-import { NewAttendancePage } from '../attendance/newAttendance';
+import { AttendancePage } from '../show/attendance';
+import { NewAttendancePage } from '../new/newAttendance';
 import {NavController, AlertController, Events} from 'ionic-angular';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-listAttendance',
+  templateUrl: 'listAttendance.html'
 })
-export class HomePage {
+export class ListAttendancePage {
 
   constructor(public navCtrl: NavController, 
   	public events: Events, public alertCtrl: AlertController) {

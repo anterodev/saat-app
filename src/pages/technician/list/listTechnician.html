@@ -4,7 +4,7 @@
       Técnicos
     </ion-title>
     <ion-buttons end>
-      <button ion-button icon-only>
+      <button ion-button icon-only (click)="addItem()">
         <ion-icon name="add"></ion-icon>
       </button>
     </ion-buttons>
@@ -13,21 +13,21 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item>
+    <button ion-item (click)="itemTapped()">
       <ion-avatar item-left>
         <img src="assets/images/user1.png">
       </ion-avatar>
       <h2>Tec. Osmar Prado</h2>
       <p>56 atendimentos</p>
     </button>
-    <button ion-item>
+    <button ion-item (click)="itemTapped()">
       <ion-avatar item-left>
         <img src="assets/images/user2.png">
       </ion-avatar>
       <h2>Tec. Gilmar</h2>
       <p>10 atendimentos</p>
     </button>
-    <button ion-item>
+    <button ion-item (click)="itemTapped()">
       <ion-avatar item-left>
         <img src="assets/images/user3.png">
       </ion-avatar>

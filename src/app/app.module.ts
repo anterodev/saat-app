@@ -1,20 +1,26 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { AttendancePage } from '../pages/attendance/attendance';
-import { NewAttendancePage } from '../pages/attendance/newAttendance';
+import { ListTechnicianPage } from '../pages/technician/list/listTechnician';
+import { TechnicianPage } from '../pages/technician/show/technician';
+import { NewTechnicianPage } from '../pages/technician/new/newTechnician';
+import { AttendancePage } from '../pages/attendance/show/attendance';
+import { NewAttendancePage } from '../pages/attendance/new/newAttendance';
+import { ListAttendancePage } from '../pages/attendance/list/listAttendance';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LoginPage } from '../pages/accounts/login/login';
 
 @NgModule({
   declarations: [
     MyApp,
-    ContactPage,
-    HomePage,
+    ListTechnicianPage,
+    TechnicianPage,
+    NewTechnicianPage,
     TabsPage,
     AttendancePage,
-    NewAttendancePage
+    NewAttendancePage,
+    ListAttendancePage,
+    LoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -22,11 +28,14 @@ import { TabsPage } from '../pages/tabs/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ContactPage,
-    HomePage,
+    ListTechnicianPage,
+    TechnicianPage,
+    NewTechnicianPage,
     TabsPage,
     AttendancePage,
-    NewAttendancePage
+    NewAttendancePage,
+    ListAttendancePage,
+    LoginPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
